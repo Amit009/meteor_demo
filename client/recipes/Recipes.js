@@ -1,1 +1,16 @@
-Meteor.subscribe('recipes');
+// Meteor.subscribe('recipes');
+
+// Template level subscription
+Template.Recipes.onCreated(function() {
+	var self = this;
+	self.autorun(function() {
+		self.subscribe('recipes');
+	});
+})
+
+
+Template.Recipes.helpers({
+	recipes:function() {
+		return Recipes.find({});
+	}
+})

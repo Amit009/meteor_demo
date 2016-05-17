@@ -1,1 +1,62 @@
 /* CSS declarations go here */
+header {
+	background: #44a2d6;
+    padding: 20px;
+	h1 {
+		display:inline-block;
+		margin:0;
+		color:#fff;
+	}
+	#login-buttons {
+		float:right;
+	}
+}
+nav {
+	background: #3386CE;
+    padding: 10px 10px 1px 10px;
+    margin-bottom:30px;
+	ul {
+		padding:0;
+		list-style:none;
+		li {
+			display:inline-block;
+			margin-right:15px;
+			i {
+				margin-right:5px;
+			}
+			a {
+				font-size:18px;
+				text-transform:uppercase;
+				color:#ffffff;
+				text-decoration:none;
+				&:hover, &:focus {
+					color:#fff;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}
+.recipe {
+	-webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.21);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.21);
+    padding: 10px 20px 15px 20px;
+    margin-bottom: 20px;
+    transition:all .5s ease;
+    -webit-transition:all .5s ease;
+    &:hover {
+    	box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.21);
+    	transition:all .5s ease;
+    	-webit-transition:all .5s ease;
+    }
+}
+.new-recipe-container {
+	margin-top:50px;
+}
+.in-menu {
+	background:teal;
+	h3 {
+		color:#f9f9f9;
+	}
+}
